@@ -4,10 +4,10 @@ using namespace std;
 // pattern:-
 
 //     1
-//    23
-//   345
-//  4567
-// 56789
+//    12
+//   123
+//  1234
+// 12345
 
 int main() {
     
@@ -17,12 +17,9 @@ int main() {
 
     int row = 1;
 
-   
-
-    while (row <= num)
+   while (row <= num)
     {
         int col = 1;
-        int value = row;
 
         while (col <= (num-row))
         {
@@ -30,14 +27,15 @@ int main() {
            col++;
 
         }
-     
+     int value = 1;
         while (col <= num )
         {
-            cout << row ;
+            
+            cout << value;
             col++;
-            row++;
+            value++;
         }
-        row = value;
+        
         row++;
         cout << "\n";
         
