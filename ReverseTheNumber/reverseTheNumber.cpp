@@ -2,11 +2,15 @@
 #include<math.h>
 using namespace std;
 
+
 int main() {
 
     int num ;
 
     cin >> num ;
+
+    int INT_MIN = pow(-2,31) ;
+    int INT_MAX = pow(2,31) - 1 ;
 
     int ans = 0;
 
@@ -16,10 +20,13 @@ int main() {
     {
         int digit = num % 10;
 
+       if ((ans > INT_MAX /10) || (ans > INT_MIN /10))
+       {
+        cout << "0";
+        return 0 ;
+       }
+       
         ans = (ans * 10) + digit;
-
-        i++ ;
-
         num = num / 10 ;
 
     }

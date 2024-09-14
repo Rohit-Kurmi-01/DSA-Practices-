@@ -16,12 +16,16 @@ int main() {
 
         answer = (bit * pow(10 , i)) + answer ;
 
-        i++ ;
+        
 
        GivenNum = GivenNum >> 1 ;
+       i++ ;
 
     }
 
     cout << answer << endl;
+
+
+    return 0;
     
 }
